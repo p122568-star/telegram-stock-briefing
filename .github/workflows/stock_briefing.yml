@@ -2,8 +2,8 @@ name: Daily Stock Telegram Briefing
 
 on:
   schedule:
-    # 한국 시간 기준 월~금요일 오전 07:00 (UTC 기준 일~목요일 22:00)
-    - cron: '0 22 * * 0-4'
+    # 한국 시간 기준 매일 오전 07:00 (UTC 기준 매일 22:00)
+    - cron: '0 22 * * *'
   workflow_dispatch: # GitHub 웹 UI에서 수동으로 실행 가능하게 설정
   push:
     branches:
